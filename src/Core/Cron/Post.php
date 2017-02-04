@@ -9,9 +9,9 @@ class Post extends AbstractCron
     {
         try {
             $status = $this->getNextUnqiueText();
-            //$this->getTwitterService()->getApi()->call('statuses/update', array('status' => $status));
+            $this->getTwitterService()->getApi()->call('statuses/update', array('status' => $status));
             
-            return true;
+            return $status;
         } catch (Exception $e) {
             return $e->getMessage();
         }

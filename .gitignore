@@ -1,3 +1,5 @@
 /vendor/
 .DS_Store
 config.php
+/logs/
+debug.log
