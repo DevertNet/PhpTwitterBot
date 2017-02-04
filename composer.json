@@ -1,0 +1,12 @@
+{
+    "autoload": {
+        "psr-0": {
+            "Core": "src/"
+        }
+    },
+    "require": {
+        "makotokw/twient": "dev-master",
+        "neveldo/text-generator": "^0.4.0",
+        "hellogerard/jobby": "^3.2"
+    }
+}
