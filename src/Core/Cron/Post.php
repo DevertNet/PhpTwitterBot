@@ -22,7 +22,7 @@ class Post extends AbstractCron
         $tweets = $this->getLastTweets();
         $text = $this->getRandomText();
         
-        while(in_array($text, $tweets))
+        while(in_array(trim($this->removeHashTags($text)), $tweets))
         {
             $text = $this->getRandomText();
         }
